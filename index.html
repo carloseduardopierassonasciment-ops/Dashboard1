@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Interativo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Dashboard de Vendas</h1>
+  </header>
+
+  <main>
+    <section class="cards">
+      <div class="card">
+        <h2>Total de Vendas</h2>
+        <p id="total-vendas">0</p>
+      </div>
+      <div class="card">
+        <h2>Clientes Ativos</h2>
+        <p id="clientes">0</p>
+      </div>
+    </section>
+
+    <section class="chart">
+      <canvas id="grafico"></canvas>
+    </section>
+
+    <section class="tabela">
+      <h2>Relatório Mensal</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Mês</th>
+            <th>Vendas</th>
+            <th>Clientes</th>
+          </tr>
+        </thead>
+        <tbody id="dados-tabela"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
